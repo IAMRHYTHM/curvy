@@ -116,3 +116,15 @@ waves svg {
 waves .shape-fill {
     fill: var(--bone-white);
 }
+
+.spacer {
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1{
+    background-image: url('assets/img/layer1.svg');
+}
