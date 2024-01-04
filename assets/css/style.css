@@ -1,0 +1,118 @@
+@import "utility.css";
+:root {
+  --primary: #80BCBD;
+  --secondary: #AAD9BB;
+  --ternary: #D5F0C1;
+  --text: #F9F7C9;
+  --secondary-text: #FFFAFA;
+  --dark: #202731;
+  --pure: #f5fef9;
+  --light: #f2f2f2;
+  --bone-white: #f9f6ee;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    color: var(--secondary-text);
+    background: var(--dark);
+    font-size: 1.9rem;
+    overflow-x: hidden;
+}
+body p{
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 15vw 20vw;
+}
+
+.primary{
+    background: var(--primary);
+    color: var(--text);
+}
+.secondary{
+    background: var(--secondary);
+    color: var(--primary);
+}
+.ternary{
+    background: var(--ternary);
+    color: var(--secondary);
+}
+.yellow{
+    background: var(--text);
+    color: var(--dark);
+}
+
+.bone-white{
+    background: var(--bone-white);
+    color: var(--dark);
+}
+
+.curve{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+.curve::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: var(--secondary);
+    transform: translate(85%, 60%);
+}
+
+.curve::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: var(--primary);
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+.bubble::after{
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    background-color: var(--secondary);
+    z-index: -1;
+}
+
+waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+waves svg {
+    position: relative;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 122px;
+}
+
+waves .shape-fill {
+    fill: var(--bone-white);
+}
