@@ -1,20 +1,41 @@
 @import "utility.css";
 :root {
-  --primary: #80BCBD;
-  --secondary: #AAD9BB;
-  --ternary: #D5F0C1;
-  --text: #F9F7C9;
-  --secondary-text: #FFFAFA;
-  --dark: #202731;
-  --pure: #f5fef9;
-  --light: #f2f2f2;
-  --bone-white: #f9f6ee;
+    --primary: #80BCBD;
+    --secondary: #AAD9BB;
+    --ternary: #D5F0C1;
+    --text: #F9F7C9;
+    --secondary-text: #FFFAFA;
+    --dark: #202731;
+    --pure: #f5fef9;
+    --light: #f2f2f2;
+    --bone-white: #f9f6ee;
+    --primary2: #18ffff;
+    --primary-light: #adffff;
+    --primary-dark: #091034;
+    --gray100: #f9fbff;
+    --gray150: #f4f6fb;
+    --gray200: #eef1f6;
+    --gray300: #e1e5ee;
+    --gray400: #767b91;
+    --gray500: #4f546c;
+    --gray600: #2a324b;
+    --gray700: #161d34;
+    --bg: #060b23;
+    --radius: 0.5rem;
 }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     -webkit-font-smotthing:antialiased;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
     margin: 0;
@@ -299,4 +320,200 @@ section.services .card-wrapper .card:hover{
 }
 section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
     color: var(--bone-white);
+}
+
+/* Your existing CSS code 
+
+section.get-in-touch {
+    font-family: "Convergence", sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--ternary);
+    position: relative; /* Added to position the custom shape 
+}
+
+.custom-shape-divider-top-get-in-touch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1; /* Move the custom shape to the background 
+}
+
+.custom-shape-divider-top-get-in-touch svg {
+    position: relative;
+    display: block;
+    width: calc(296% + 1.3px);
+    height: 125px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-get-in-touch .shape-fill {
+    fill: var(--secondary);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: 2px solid var(--gray500);
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--gray600);
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+    transition: border-color 0.3s;
+}
+
+.form input:hover, .form textarea:hover {
+    border-color: var(--primary-light);
+}
+
+.form input:focus, .form textarea:focus {
+    border-color: var(--primary2);
+}
+
+.form label {
+    position: absolute;
+    font-size: 1.2rem;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: var(--gray600);
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    background-color: var(--clr-bg);
+}
+
+.form input:focus ~ label,
+.form input:not(:placeholder-shown):not(:focus) ~ label {
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+
+.form-button {
+    grid-column: span 2; /* Make the button span both columns 
+    margin-top: 20vh;
+}
+*/
+
+/* Your existing CSS code */
+
+section.get-in-touch {
+    font-family: "Convergence", sans-serif;
+    height: 100vh;
+    display: flex; /* Change to flex to center the form */
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    font-size: 1.2rem;
+    background-color: var(--ternary);
+    position: relative; /* Added to position the custom shape */
+}
+
+.custom-shape-divider-top-get-in-touch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    /* z-index: -1; Move the custom shape to the background */
+}
+
+.custom-shape-divider-top-get-in-touch svg {
+    position: relative;
+    display: block;
+    width: calc(296% + 1.3px);
+    height: 125px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-get-in-touch .shape-fill {
+    fill: var(--secondary);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 75%; /* Set the form width to 75% */
+}
+
+.form-group {
+    position: relative;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: 2px solid var(--gray500);
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--gray600);
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+    transition: border-color 0.3s;
+}
+
+.form input:hover {
+    border-color: var(--primary-light);
+}
+
+.form input:focus {
+    border-color: var(--primary2);
+}
+
+.form-group label {
+    position: absolute;
+    font-family: "Convergence", sans-serif;
+    left: 1rem;
+    top: 1rem; /* Adjusted top position for better visual */
+    padding: 0 0.5rem;
+    color: var(--gray600);
+    font-size: 0.8rem;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    background-color: var(--ternary);
+}
+
+.form input:focus ~ label,
+.form input:not(:placeholder-shown):not(:focus) ~ label,
+.form textarea:focus ~ label,
+.form textarea:not(:placeholder-shown):not(:focus) ~ label {
+    top: -0.5rem;
+    font-size: 0.5rem;
+    left: 0.8rem;
+    /* transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in; */
+}
+
+
+
+.form-button {
+    grid-column: span 2; /* Make the button span both columns */
+    margin-top: 20vh;
 }

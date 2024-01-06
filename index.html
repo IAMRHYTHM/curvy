@@ -1,181 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curvy-Rhytmelo</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet"> -->
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Poppins:wght@100;300;400;700&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Poppins:wght@100;300;400;700&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/utility.css">
-</head>
-<body>
+    <!-- SCRIPT FOR HTML VALIDATION OF PHONE FIELD BY CLOUDFLARE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  </head>
+  <body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="./assets/js/app.js"></script>
     <header>
-        <div class="container">
-            <nav class="flex items-center justify-between">
-                <div class="menu flex items-center ">
-                    <div class="branding hidden"> <a href="#"><img src="./assets/img/logo.svg" alt="Rhytmelo is a leading brand in the field of web development and we designing."></a> </div>
-                    <div class="header-menu"> <a href="#">Home</a> <a href="#about-us">About Us</a> <a href="#our-services">Our Services</a> <a href="#our-projects">Projects</a> <a href="/blogs">Blogs</a> </div>
-                </div>
-                <div class="button"> <button class="btn-animated btn-primary">
-                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span class="text">Contact Us</span>
-                    <span class="circle"></span>
-                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#80BCBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button> </div>
-            </nav>
-            <div class="hero container-2 flex items-center justify-between">
-                <div class="left flex-1 no-text">
-                    <h6>Elevate your online presence with Rhytmelo.com</h6>
-                    <h1>Digital Development <span>Agency</span></span></h1>
-                    <p>We believe in the transformative power of the web. Our mission is to empower businesses and organizations with a compelling online presence, fostering growth and success in the digital age. </p>
-                    <div><button class="btn btn-secondary">See our Projects</button></div>
-                </div>
-                <div class="right flex-1 flex items-center justify-right"> <img class="hero-img hidden" src="./assets/img/hero-image.svg" alt=""> </div>
+      <div class="container">
+        <nav class="flex items-center justify-between">
+          <div class="menu flex items-center ">
+            <div class="branding hidden">
+              <a href="#">
+                <img src="./assets/img/logo.svg" alt="Rhytmelo is a leading brand in the field of web development and we designing.">
+              </a>
             </div>
+            <div class="header-menu">
+              <a href="#">Home</a>
+              <a href="#about-us">About Us</a>
+              <a href="#our-services">Our Services</a>
+              <a href="#our-projects">Projects</a>
+              <a href="/blogs">Blogs</a>
+            </div>
+          </div>
+          <div class="button">
+            <button class="btn-animated btn-primary">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="text">Contact Us</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#80BCBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div class="hero container-2 flex items-center justify-between">
+          <div class="left flex-1 no-text">
+            <h6>Elevate your online presence with Rhytmelo.com</h6>
+            <h1>Digital Development <span>Agency</span>
+              </span>
+            </h1>
+            <p>We believe in the transformative power of the web. Our mission is to empower businesses and organizations with a compelling online presence, fostering growth and success in the digital age. </p>
+            <div>
+              <button class="btn btn-secondary">See our Projects</button>
+            </div>
+          </div>
+          <div class="right flex-1 flex items-center justify-right">
+            <img class="hero-img hidden" src="./assets/img/hero-image.svg" alt="">
+          </div>
         </div>
+      </div>
     </header>
     <div class="spacer header-layer">
-        <div class="container">
-            <div class="division-heading flex-1 items-center">
-                <h1 class="section-heading">About <span>Us</span></h1>
-            </div>
+      <div class="container">
+        <div class="division-heading flex-1 items-center">
+          <h1 class="section-heading">About <span>Us</span>
+          </h1>
         </div>
+      </div>
     </div>
-
     <section class="about-us primary">
-        <div class="container flex items-center justify-between">
-            <div class="right flex-1 ">
-                <img class="about-us-img" src="./assets/img/about-us.svg" alt="">
-            </div>
-            <div class="left flex-1">
-                <!-- <h1 class="section-heading">About <span>Us</span></h1> -->
-                <h3>Crafting Digital Brilliance</h3>
-                <p>At Rhytmelo.com, we're not just web developers; 
-                    we're architects of online excellence. 
-                    Specializing in high-end web development, 
-                    design, and SEO optimization, we elevate your digital presence to unparalleled heights. 
-                    Our dedicated team brings creativity and innovation 
-                    to every project, ensuring visually stunning and user-friendly 
-                    interfaces. From industry-focused solutions to WordPress mastery, 
-                    custom themes, and JavaScript expertise, we tailor our services to 
-                    meet your unique needs. Our mission is clear: empower businesses with a compelling 
-                    online presence that exceeds expectations. Explore the transformative power of the web with 
-                    Rhytmelo.com – where digital brilliance is crafted, one website at a time. 🚀🌐</p>
-                    <div class="social">
-                        <a href="#"><img src="./assets/img/website.svg" alt=""></a>
-                        <a href="#"><img src="./assets/img/facebook.png" alt=""></a>
-                        <a href="#"><img src="./assets/img/twitter.svg" alt=""></a>
-                        <a href="#"><img src="./assets/img/instagram.svg" alt=""></a>
-                    </div>
-            </div>
-
+      <div class="container flex items-center justify-between">
+        <div class="right flex-1 ">
+          <img class="about-us-img" src="./assets/img/about-us.svg" alt="">
         </div>
+        <div class="left flex-1">
+          <!-- <h1 class="section-heading">About <span>Us</span></h1> -->
+          <h3>Crafting Digital Brilliance</h3>
+          <p>At Rhytmelo.com, we're not just web developers; we're architects of online excellence. Specializing in high-end web development, design, and SEO optimization, we elevate your digital presence to unparalleled heights. Our dedicated team brings creativity and innovation to every project, ensuring visually stunning and user-friendly interfaces. From industry-focused solutions to WordPress mastery, custom themes, and JavaScript expertise, we tailor our services to meet your unique needs. Our mission is clear: empower businesses with a compelling online presence that exceeds expectations. Explore the transformative power of the web with Rhytmelo.com – where digital brilliance is crafted, one website at a time. 🚀🌐</p>
+          <div class="social">
+            <a href="#">
+              <img src="./assets/img/website.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/img/facebook.png" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/img/twitter.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/img/instagram.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-
     <!-- <div class="spacer layer1"></div> -->
-    
     <section class=" services secondary ">
-        <div class="custom-shape-divider-top-1704407263">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
+      <!-- Curves code to style the home page -->
+      <div class="custom-shape-divider-top-1704407263">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <!-- Main Contentent starts here befor this design elements -->
+      <div class="container offer-service">
+        <h1 class="section-heading">What We <span>Offer ?</span>
+        </h1>
+        <p>We offer high-quality web development, design, and SEO optimization services, tailored to different sectors and including WordPress mastery, custom themes, and JavaScript applications, to help businesses establish a strong online presence.</p>
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="./assets/img/web-design.svg" alt="">
+            <h2>Design Excellence</h2>
+            <p>Dedicated team ensuring visually stunning and user-friendly interfaces.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/img/code.svg" alt="">
+            <h2>Web Development</h2>
+            <p>Crafting cutting-edge websites for seamless online experiences.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/img/brush.svg" alt="">
+            <h2>SEO Optimization</h2>
+            <p>Comprehensive services to boost online rankings and drive organic traffic.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/img/industry-focused.svg" alt="">
+            <h2>Industry-Focused Solutions</h2>
+            <p>Tailored web solutions for education, plastic, chemical industries, and more.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/img/value-for-money.svg" alt="">
+            <h2>Cost-Effective Plans</h2>
+            <p>We believe in being pocket-friendly. Our plans start at just $299, ensuring high-quality services without breaking the bank.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/img/mobile-features.svg" alt="">
+            <h2>App Development</h2>
+            <p>From concept to launch, our team crafts innovative mobile applications that resonate with your audience.</p>
+          </div>
         </div>
-
-        <!-- Main Contentent starts here befor this design elements -->
-        <div class="container offer-service">
-            <h1 class="section-heading">What We <span>Offer ?</span></h1>
-            <p>We offer high-quality web development, design, and SEO optimization services, tailored to different sectors and including WordPress mastery, custom themes, and JavaScript applications, to help businesses establish a strong online presence.</p>
-
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./assets/img/web-design.svg" alt="">
-                    <h2>Design Excellence</h2>
-                    <p>Dedicated team ensuring visually stunning and user-friendly interfaces.</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/code.svg" alt="">
-                    <h2>Web Development</h2>
-                    <p>Crafting cutting-edge websites for seamless online experiences.</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/brush.svg" alt="">
-                    <h2>SEO Optimization</h2>
-                    <p>Comprehensive services to boost online rankings and drive organic traffic.</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/industry-focused.svg" alt="">
-                    <h2>Industry-Focused Solutions</h2>
-                    <p>Tailored web solutions for education, plastic, chemical industries, and more.</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/value-for-money.svg" alt="">
-                    <h2>Cost-Effective Plans</h2>
-                    <p>We believe in being pocket-friendly. Our plans start at just $299, ensuring high-quality services without breaking the bank.</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/mobile-features.svg" alt="">
-                    <h2>App Development</h2>
-                    <p>From concept to launch, our team crafts innovative mobile applications that resonate with your audience.</p>
-                </div>
-            </div>
-        </div>
-        
+      </div>
     </section>
-    <section class="ternary dark">
-        <h1>Nice Curves</h1>
-        <p>Nam tenetur doloremque itaque ratione libero. Incidunt corrupti voluptatibus non. Tempore recusandae explicabo veritatis at dicta omnis, nam, labore consequuntur, quisquam alias illo! Reiciendis animi impedit, nam commodi quis dicta.</p>
+    <section class="get-in-touch ternary ">
+      <div class="custom-shape-divider-top-get-in-touch">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="container-form">
+        <form class="contact-form" onclick="">
+          <h1 class="section-heading">Get in <span>Touch</span>
+          </h1>
+          <div class="form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder=" " required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder=" " required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder=" " required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder=" " required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea name="message" id="message" rows="4"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-animated form-button">Submit Enquiry</button>
+        </form>
+        <div class="alert alert-info" style="display: none"></div>
+        <div class="alert alert-error" style="display: none"></div>
+      </div>
     </section>
     <section class="bone-white">
-        <h1>Nice Curves</h1>
-        <p>Vel eveniet, sequi repellat praesentium voluptatum, optio hic voluptate quas assumenda adipisci numquam sit vero totam, dolorem laudantium accusantium eum cumque nisi molestias provident iusto ea eius. Maiores, saepe fugit.</p>
-        <div class="waves">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
+      <h1>Nice Curves</h1>
+      <p>Vel eveniet, sequi repellat praesentium voluptatum, optio hic voluptate quas assumenda adipisci numquam sit vero totam, dolorem laudantium accusantium eum cumque nisi molestias provident iusto ea eius. Maiores, saepe fugit.</p>
+      <div class="waves">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div>
     </section>
     <section class="yellow">
-        <h1>Nice Curves</h1>
-        <p>Alias corrupti, voluptatibus rerum hic, pariatur quibusdam fugit placeat at obcaecati, expedita inventore in? Deleniti, ea doloremque numquam error nobis accusantium optio dolores vero facilis, tenetur, corrupti consequatur minus dolorem!</p>
-        <div class="waves">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        
+      <h1>Nice Curves</h1>
+      <p>Alias corrupti, voluptatibus rerum hic, pariatur quibusdam fugit placeat at obcaecati, expedita inventore in? Deleniti, ea doloremque numquam error nobis accusantium optio dolores vero facilis, tenetur, corrupti consequatur minus dolorem!</p>
+      <div class="waves">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div>
     </section>
     <section class="default">
-        <h1>Nice Curves</h1>
-        <p>Enim recusandae autem iusto aspernatur, ea atque excepturi laborum debitis expedita inventore odit repudiandae amet veniam, voluptatibus, consectetur nesciunt. Quam quas quia mollitia obcaecati error atque modi doloribus numquam distinctio.</p>
-       
+      <h1>Nice Curves</h1>
+      <p>Enim recusandae autem iusto aspernatur, ea atque excepturi laborum debitis expedita inventore odit repudiandae amet veniam, voluptatibus, consectetur nesciunt. Quam quas quia mollitia obcaecati error atque modi doloribus numquam distinctio.</p>
     </section>
-
     <section class="primary">
-        <h1>Nice Curves</h1>
-        <p>Ut itaque quod minima eveniet repellendus maiores rerum ad non accusamus natus tempora eius, quas nulla possimus praesentium nihil nesciunt illo architecto deleniti dolorem inventore ipsa odio? Magnam, porro maxime?</p>
+      <h1>Nice Curves</h1>
+      <p>Ut itaque quod minima eveniet repellendus maiores rerum ad non accusamus natus tempora eius, quas nulla possimus praesentium nihil nesciunt illo architecto deleniti dolorem inventore ipsa odio? Magnam, porro maxime?</p>
     </section>
     <section class="secondary">
-        <h1>Nice Curves</h1>
-        <p>Iure dolores optio culpa natus! Quod, tempore? Debitis soluta distinctio enim ea libero. Numquam, exercitationem amet perspiciatis fugiat sapiente incidunt, minus nulla neque laboriosam cumque officia facere doloremque at architecto.</p>
+      <h1>Nice Curves</h1>
+      <p>Iure dolores optio culpa natus! Quod, tempore? Debitis soluta distinctio enim ea libero. Numquam, exercitationem amet perspiciatis fugiat sapiente incidunt, minus nulla neque laboriosam cumque officia facere doloremque at architecto.</p>
     </section>
-
-    
-
-</body>
+  </body>
 </html>
