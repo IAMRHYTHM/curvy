@@ -36,6 +36,10 @@ header{
     max-width: 1152px;
     padding: 0 15px;
     margin: 0 auto;
+    /* margin-top: 10vw; */
+}
+.container .offer-service{
+    margin-top: 10vw;
 }
 .container-2{
     max-width: 1152px;
@@ -103,7 +107,6 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15vw 0;
 }
 
 .primary{
@@ -135,6 +138,11 @@ section{
     background-size: cover;
     margin-bottom: 0;
 }
+
+.spacer .division-heading{
+    /* margin-top: 20vw; */
+    padding-top: 15vw;
+}
 .custom-shape-divider-top-1704407263 {
     position: absolute;
     top: 0;
@@ -163,8 +171,13 @@ section{
 }
 
 section.about-us{
-    height: 100%;
     margin-top: 0;
+}
+section.about-us .left{
+    margin-top: -8rem;
+}
+section.about-us .right{
+    margin-top: -8rem;
 }
 
 section.about-us .container .about-us-img{
@@ -186,6 +199,7 @@ section.about-us h3{
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 400;
+    
 }
 
 section.about-us p{
@@ -244,6 +258,10 @@ section.services .card-wrapper{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
+}
+section.services .container{
+    margin-top: 15vw;
+    margin-bottom: 8rem;
 }
 section.services .card-wrapper .card{
     background: var(--bone-white);

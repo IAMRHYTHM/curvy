@@ -28,7 +28,16 @@
                     <div class="branding hidden"> <a href="#"><img src="./assets/img/logo.svg" alt="Rhytmelo is a leading brand in the field of web development and we designing."></a> </div>
                     <div class="header-menu"> <a href="#">Home</a> <a href="#about-us">About Us</a> <a href="#our-services">Our Services</a> <a href="#our-projects">Projects</a> <a href="/blogs">Blogs</a> </div>
                 </div>
-                <div class="button"> <button class="btn btn-primary">Contact Us</button> </div>
+                <div class="button"> <button class="btn-animated btn-primary">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#fafafa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text">Contact Us</span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#80BCBD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button> </div>
             </nav>
             <div class="hero container-2 flex items-center justify-between">
                 <div class="left flex-1 no-text">
@@ -41,15 +50,21 @@
             </div>
         </div>
     </header>
-    <div class="spacer header-layer"></div>
+    <div class="spacer header-layer">
+        <div class="container">
+            <div class="division-heading flex-1 items-center">
+                <h1 class="section-heading">About <span>Us</span></h1>
+            </div>
+        </div>
+    </div>
 
     <section class="about-us primary">
-        <div class="container flex items-center">
+        <div class="container flex items-center justify-between">
             <div class="right flex-1 ">
                 <img class="about-us-img" src="./assets/img/about-us.svg" alt="">
             </div>
             <div class="left flex-1">
-                <h1 class="section-heading">About <span>Us</span></h1>
+                <!-- <h1 class="section-heading">About <span>Us</span></h1> -->
                 <h3>Crafting Digital Brilliance</h3>
                 <p>At Rhytmelo.com, we're not just web developers; 
                     we're architects of online excellence. 
@@ -83,7 +98,7 @@
         </div>
 
         <!-- Main Contentent starts here befor this design elements -->
-        <div class="container">
+        <div class="container offer-service">
             <h1 class="section-heading">What We <span>Offer ?</span></h1>
             <p>We offer high-quality web development, design, and SEO optimization services, tailored to different sectors and including WordPress mastery, custom themes, and JavaScript applications, to help businesses establish a strong online presence.</p>
 
@@ -159,5 +174,8 @@
         <h1>Nice Curves</h1>
         <p>Iure dolores optio culpa natus! Quod, tempore? Debitis soluta distinctio enim ea libero. Numquam, exercitationem amet perspiciatis fugiat sapiente incidunt, minus nulla neque laboriosam cumque officia facere doloremque at architecto.</p>
     </section>
+
+    
+
 </body>
 </html>
